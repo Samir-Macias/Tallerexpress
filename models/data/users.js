@@ -4,6 +4,7 @@ import User from "../User.js"
 
 
 
+// Array of users (15 users as required)
 const users = [
     {
       name: "John Doe",
@@ -123,86 +124,6 @@ const users = [
       address: "753 Willow Street",
       phone: 5555678902,
       password: "hashed_password_15",
-      online: false,
-    },
-    {
-      name: "Olivia Rodriguez",
-      email: "olivia.rodriguez@example.com",
-      address: "246 Maple Avenue",
-      phone: 5556789013,
-      password: "hashed_password_16",
-      online: true,
-    },
-    {
-      name: "Henry Lewis",
-      email: "henry.lewis@example.com",
-      address: "135 Oak Street",
-      phone: 5557890124,
-      password: "hashed_password_17",
-      online: false,
-    },
-    {
-      name: "Grace Walker",
-      email: "grace.walker@example.com",
-      address: "357 Pine Circle",
-      phone: 5558901235,
-      password: "hashed_password_18",
-      online: true,
-    },
-    {
-      name: "Jason Young",
-      email: "jason.young@example.com",
-      address: "951 Spruce Avenue",
-      phone: 5559012346,
-      password: "hashed_password_19",
-      online: false,
-    },
-    {
-      name: "Emily King",
-      email: "emily.king@example.com",
-      address: "468 Cedar Plaza",
-      phone: 5550123457,
-      password: "hashed_password_20",
-      online: true,
-    },
-    {
-      name: "Liam Scott",
-      email: "liam.scott@example.com",
-      address: "159 Birch Road",
-      phone: 5551234569,
-      password: "hashed_password_21",
-      online: false,
-    },
-    {
-      name: "Emma Green",
-      email: "emma.green@example.com",
-      address: "753 Willow Lane",
-      phone: 5552345670,
-      password: "hashed_password_22",
-      online: true,
-    },
-    {
-      name: "Matthew Adams",
-      email: "matthew.adams@example.com",
-      address: "468 Oakwood Street",
-      phone: 5553456781,
-      password: "hashed_password_23",
-      online: false,
-    },
-    {
-      name: "Ava Campbell",
-      email: "ava.campbell@example.com",
-      address: "852 Chestnut Avenue",
-      phone: 5554567892,
-      password: "hashed_password_24",
-      online: true,
-    },
-    {
-      name: "Alexander Carter",
-      email: "alexander.carter@example.com",
-      address: "951 Aspen Plaza",
-      phone: 5555678903,
-      password: "hashed_password_25",
       online: false,
     }
   ];

@@ -6,7 +6,11 @@
   "type": "module",
   "scripts": {
     "start": "node ./server.js",
-    "dev": "nodemon ./server.js"
+    "dev": "nodemon ./server.js",
+    "dataUsers": "node ./models/data/users.js",
+    "dataRegistrations": "node ./models/data/registrations.js",
+    "dataProperties": "node ./models/data/properties.js"
+
   },
   "keywords": [],
   "author": "",
