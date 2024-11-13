@@ -9,8 +9,8 @@
     "dev": "nodemon ./server.js",
     "dataUsers": "node ./models/data/users.js",
     "dataRegistrations": "node ./models/data/registrations.js",
-    "dataProperties": "node ./models/data/properties.js"
-
+    "dataProperties": "node ./models/data/properties.js",
+    "passwordHash": "node ./middlewares/hashPasswords.js"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
+    "joi": "^17.13.3",
     "mongoose": "^8.8.1",
     "morgan": "^1.10.0"
   },
