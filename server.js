@@ -14,6 +14,8 @@ const PORT = process.env.PORT || 8080
 
 const ready = () => console.log("El servidor esta en el puerto " + PORT);
 
+server.use(express.json())
+server.use(express.urlencoded({ extended: true }))
 server.use(cors())
 server.use(morgan('dev'))
 

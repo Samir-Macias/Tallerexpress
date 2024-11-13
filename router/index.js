@@ -6,9 +6,9 @@ import usersRouter from './users.js'
 
 const router = Router()
 
-router.use('properties', propertiesRouter)
-router.use('registrations', registrationsRouter)
-router.use('users', usersRouter)
+router.use('/properties', propertiesRouter)
+router.use('/registrations', registrationsRouter)
+router.use('/users', usersRouter)
 
 
 export default router 

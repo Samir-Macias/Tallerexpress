@@ -1,4 +1,4 @@
-import Registration from "../../models/Registration";
+import Registration from "../../models/Registration.js";
 
 let updateRegistration = async (req, res, next) => {
     try {

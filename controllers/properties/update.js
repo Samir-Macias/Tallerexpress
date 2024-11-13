@@ -1,4 +1,4 @@
-import Property from "../../models/Property";
+import Property from "../../models/Property.js";
 
 
 let updateProperty = async (req, res, next) => {
