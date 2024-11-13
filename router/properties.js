@@ -8,12 +8,12 @@ import {updateProperty, updateManyproperties} from "../controllers/properties/up
 const router = Router()
 
 router.post('/create', create)
-router.delete('deleateall', deleteAllproperties)
-router.delete('deleate', deleteproperty)
-router.get('filterall', allproperties)
-router.get('id', idProperties)
-router.put('oneproperty', updateProperty)
-router.put('manyproperties', updateManyproperties)
+router.delete('/deleateall', deleteAllproperties)
+router.delete('/deleate', deleteproperty)
+router.get('/filterall', allproperties)
+router.get('/id/:id', idProperties)
+router.put('/oneproperty', updateProperty)
+router.put('/manyproperties', updateManyproperties)
 
 
 
