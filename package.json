@@ -21,6 +21,8 @@
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "joi": "^17.13.3",
+    "joi-oid": "^1.1.2",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.8.1",
     "morgan": "^1.10.0"
   },
