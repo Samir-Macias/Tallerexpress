@@ -10,13 +10,13 @@ import createPropertySchema from "../schemas/property/create.js";
 
 const router = Router()
 
-router.post('/create',validator(createPropertySchema), create)
-router.delete('/deleateall', deleteAllproperties)
-router.delete('/deleate', deleteproperty)
-router.get('/filterall', allproperties)
-router.get('/id/:id', idProperties)
-router.put('/oneproperty',validator(updatePropertySchema), updateProperty)
-router.put('/manyproperties', updateManyproperties)
+router.post('/create',passport.authenticate('jwt',{session:false}),validator(createPropertySchema), create)
+router.delete('/deleateall',passport.authenticate('jwt',{session:false}), deleteAllproperties)
+router.delete('/deleate',passport.authenticate('jwt',{session:false}), deleteproperty)
+router.get('/filterall',passport.authenticate('jwt',{session:false}), allproperties)
+router.get('/id/:id',passport.authenticate('jwt',{session:false}), idProperties)
+router.put('/oneproperty',passport.authenticate('jwt',{session:false}),validator(updatePropertySchema), updateProperty)
+router.put('/manyproperties',passport.authenticate('jwt',{session:false}), updateManyproperties)
 
 
 

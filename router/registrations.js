@@ -10,12 +10,12 @@ import createRegistrationSchema from "../schemas/registration/create.js";
 
 const router = Router()
 
-router.post('/create',validator(createRegistrationSchema), create)
-router.delete('/delete', deleteRegistration)
-router.delete('/deleteall', deleteAllRegistrations)
-router.get('/all', allRegistration)
-router.get('/id/:id', idRegistration)
-router.put('update',validator(updateRegistrationSchema), updateRegistration)
-router.put('updatemany', updateManyRegistrations)
+router.post('/create',passport.authenticate('jwt',{session:false}),validator(createRegistrationSchema), create)
+router.delete('/delete',passport.authenticate('jwt',{session:false}), deleteRegistration)
+router.delete('/deleteall',passport.authenticate('jwt',{session:false}), deleteAllRegistrations)
+router.get('/all',passport.authenticate('jwt',{session:false}), allRegistration)
+router.get('/id/:id',passport.authenticate('jwt',{session:false}), idRegistration)
+router.put('update',passport.authenticate('jwt',{session:false}),validator(updateRegistrationSchema), updateRegistration)
+router.put('updatemany',passport.authenticate('jwt',{session:false}), updateManyRegistrations)
 
 export default router
